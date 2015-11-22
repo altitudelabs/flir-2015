@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D668EC6B1C001FEE0084CE71 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D668EC6A1C001FEE0084CE71 /* CoreImage.framework */; };
+		D668EC6D1C001FF40084CE71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D668EC6C1C001FF40084CE71 /* QuartzCore.framework */; };
+		D668EC701C0045720084CE71 /* MyImageProcessing.m in Sources */ = {isa = PBXBuildFile; fileRef = D668EC6F1C0045720084CE71 /* MyImageProcessing.m */; };
+		D668EC781C0063E90084CE71 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = D668EC771C0063E90084CE71 /* Config.m */; };
+		D668EC7B1C0068860084CE71 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668EC7A1C0068860084CE71 /* BaseViewController.m */; };
+		D668EC7E1C0068AB0084CE71 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668EC7D1C0068AB0084CE71 /* HomeViewController.m */; };
+		D668EC801C0092060084CE71 /* close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC7F1C0092060084CE71 /* close@3x.png */; };
+		D668EC811C00987D0084CE71 /* ProximaNovaSoft-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D668EC741C00633B0084CE71 /* ProximaNovaSoft-Bold.otf */; };
+		D668EC821C00987D0084CE71 /* ProximaNovaSoft-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D668EC751C00633B0084CE71 /* ProximaNovaSoft-Regular.otf */; };
+		D668EC9B1C009BEA0084CE71 /* camera_crosshair@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC831C009BEA0084CE71 /* camera_crosshair@2x.png */; };
+		D668EC9C1C009BEA0084CE71 /* camera_crosshair@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC841C009BEA0084CE71 /* camera_crosshair@3x.png */; };
+		D668EC9E1C009BEA0084CE71 /* date@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC861C009BEA0084CE71 /* date@3x.png */; };
+		D668EC9F1C009BEA0084CE71 /* home_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC871C009BEA0084CE71 /* home_active@3x.png */; };
+		D668ECA01C009BEA0084CE71 /* home_inactive@3x copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC881C009BEA0084CE71 /* home_inactive@3x copy.png */; };
+		D668ECA11C009BEA0084CE71 /* live_active@3x copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC891C009BEA0084CE71 /* live_active@3x copy.png */; };
+		D668ECA21C009BEA0084CE71 /* live_inactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC8A1C009BEA0084CE71 /* live_inactive@3x.png */; };
+		D668ECA31C009BEA0084CE71 /* pointer@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC8B1C009BEA0084CE71 /* pointer@3x.png */; };
+		D668ECA41C009BEA0084CE71 /* profile_arrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC8C1C009BEA0084CE71 /* profile_arrow@3x.png */; };
+		D668ECA51C009BEA0084CE71 /* profile_pic@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC8D1C009BEA0084CE71 /* profile_pic@1x.png */; };
+		D668ECA61C009BEA0084CE71 /* rate_dead_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC8E1C009BEA0084CE71 /* rate_dead_active@3x.png */; };
+		D668ECA71C009BEA0084CE71 /* rate_dead_inactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC8F1C009BEA0084CE71 /* rate_dead_inactive@3x.png */; };
+		D668ECA81C009BEA0084CE71 /* rate_happy_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC901C009BEA0084CE71 /* rate_happy_active@3x.png */; };
+		D668ECA91C009BEA0084CE71 /* rate_happy_inactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC911C009BEA0084CE71 /* rate_happy_inactive@3x.png */; };
+		D668ECAA1C009BEA0084CE71 /* rate_really_happy_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC921C009BEA0084CE71 /* rate_really_happy_active@3x.png */; };
+		D668ECAB1C009BEA0084CE71 /* rate_really_happy_inactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC931C009BEA0084CE71 /* rate_really_happy_inactive@3x.png */; };
+		D668ECAC1C009BEA0084CE71 /* rate_sad_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC941C009BEA0084CE71 /* rate_sad_active@3x.png */; };
+		D668ECAD1C009BEA0084CE71 /* rate_sad_inactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC951C009BEA0084CE71 /* rate_sad_inactive@3x.png */; };
+		D668ECAE1C009BEA0084CE71 /* rate_smiling_active@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC961C009BEA0084CE71 /* rate_smiling_active@3x.png */; };
+		D668ECAF1C009BEA0084CE71 /* rate_smiling_inactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC971C009BEA0084CE71 /* rate_smiling_inactive@3x.png */; };
+		D668ECB01C009BEA0084CE71 /* settings_active@3x copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC981C009BEA0084CE71 /* settings_active@3x copy.png */; };
+		D668ECB11C009BEA0084CE71 /* settings_inactive@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC991C009BEA0084CE71 /* settings_inactive@3x.png */; };
+		D668ECB21C009BEA0084CE71 /* Sleep1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668EC9A1C009BEA0084CE71 /* Sleep1@3x.png */; };
+		D668ECB41C00A8CD0084CE71 /* sleep_detail_graph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668ECB31C00A8CD0084CE71 /* sleep_detail_graph@3x.png */; };
+		D668ECB61C00ABE50084CE71 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668ECB51C00ABE50084CE71 /* back@2x.png */; };
+		D668ECB91C00B01D0084CE71 /* SelectBabyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668ECB81C00B01D0084CE71 /* SelectBabyViewController.m */; };
+		D668ECBB1C00B1E20084CE71 /* profile@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668ECBA1C00B1E20084CE71 /* profile@3x.png */; };
+		D668ECC11C00BB220084CE71 /* RatingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D668ECC01C00BB220084CE71 /* RatingViewController.m */; };
+		D668ECC31C00BBC60084CE71 /* Rating@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D668ECC21C00BBC60084CE71 /* Rating@3x.png */; };
+		D675C8921C01541B00975BE3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675C8911C01541B00975BE3 /* Security.framework */; };
+		D675C8941C01543400975BE3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675C8931C01543400975BE3 /* AudioToolbox.framework */; };
+		D675C8961C0154D800975BE3 /* Sinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D675C8951C0154D800975BE3 /* Sinch.framework */; };
+		D675C8981C01597400975BE3 /* business_ring_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = D675C8971C01597400975BE3 /* business_ring_03.wav */; };
+		D69AFAB11BFEC23800F7DE49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D69AFAB01BFEC23800F7DE49 /* main.m */; };
+		D69AFAB41BFEC23800F7DE49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D69AFAB31BFEC23800F7DE49 /* AppDelegate.m */; };
+		D69AFAB71BFEC23800F7DE49 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D69AFAB61BFEC23800F7DE49 /* CameraViewController.m */; };
+		D69AFABA1BFEC23800F7DE49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69AFAB81BFEC23800F7DE49 /* Main.storyboard */; };
+		D69AFABD1BFEC23800F7DE49 /* FlirOne.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D69AFABB1BFEC23800F7DE49 /* FlirOne.xcdatamodeld */; };
+		D69AFABF1BFEC23800F7DE49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D69AFABE1BFEC23800F7DE49 /* Assets.xcassets */; };
+		D69AFAC21BFEC23800F7DE49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D69AFAC01BFEC23800F7DE49 /* LaunchScreen.storyboard */; };
+		D69AFACD1BFEC23800F7DE49 /* FlirOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D69AFACC1BFEC23800F7DE49 /* FlirOneTests.m */; };
+		D69AFAD81BFEC23800F7DE49 /* FlirOneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D69AFAD71BFEC23800F7DE49 /* FlirOneUITests.m */; };
+		D69AFAE81BFEC2AC00F7DE49 /* FLIROneSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D69AFAE51BFEC2AC00F7DE49 /* FLIROneSDK.bundle */; };
+		D69AFAE91BFEC2AC00F7DE49 /* FLIROneSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AFAE61BFEC2AC00F7DE49 /* FLIROneSDK.framework */; };
+		D69AFAEA1BFEC2AD00F7DE49 /* sampleframes_hq.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D69AFAE71BFEC2AC00F7DE49 /* sampleframes_hq.bundle */; };
+		D69AFAEC1BFEC34900F7DE49 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AFAEB1BFEC34900F7DE49 /* Accelerate.framework */; };
+		D69AFAEE1BFEC36200F7DE49 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AFAED1BFEC36200F7DE49 /* libstdc++.tbd */; };
+		D69AFAF01BFEC5D100F7DE49 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AFAEF1BFEC5D100F7DE49 /* AVFoundation.framework */; };
+		D69AFAF21BFEC60200F7DE49 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AFAF11BFEC60200F7DE49 /* ImageIO.framework */; };
+		D69AFAF41BFEC66100F7DE49 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AFAF31BFEC66100F7DE49 /* ExternalAccessory.framework */; };
+		D69AFAF61BFEC66F00F7DE49 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AFAF51BFEC66F00F7DE49 /* CoreLocation.framework */; };
+		D69AFAF81BFEC6AC00F7DE49 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D69AFAF71BFEC6AC00F7DE49 /* MobileCoreServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D69AFAC91BFEC23800F7DE49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D69AFAA41BFEC23800F7DE49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D69AFAAB1BFEC23800F7DE49;
+			remoteInfo = FlirOne;
+		};
+		D69AFAD41BFEC23800F7DE49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D69AFAA41BFEC23800F7DE49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D69AFAAB1BFEC23800F7DE49;
+			remoteInfo = FlirOne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D668EC6A1C001FEE0084CE71 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D668EC6C1C001FF40084CE71 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D668EC6E1C0045720084CE71 /* MyImageProcessing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImageProcessing.h; sourceTree = "<group>"; };
+		D668EC6F1C0045720084CE71 /* MyImageProcessing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImageProcessing.m; sourceTree = "<group>"; };
+		D668EC721C005F810084CE71 /* camera_crosshair@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_crosshair@2x.png"; sourceTree = "<group>"; };
+		D668EC741C00633B0084CE71 /* ProximaNovaSoft-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Bold.otf"; sourceTree = "<group>"; };
+		D668EC751C00633B0084CE71 /* ProximaNovaSoft-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaSoft-Regular.otf"; sourceTree = "<group>"; };
+		D668EC761C0063E90084CE71 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		D668EC771C0063E90084CE71 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		D668EC791C0068860084CE71 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		D668EC7A1C0068860084CE71 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		D668EC7C1C0068AB0084CE71 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		D668EC7D1C0068AB0084CE71 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		D668EC7F1C0092060084CE71 /* close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@3x.png"; sourceTree = "<group>"; };
+		D668EC831C009BEA0084CE71 /* camera_crosshair@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_crosshair@2x.png"; sourceTree = "<group>"; };
+		D668EC841C009BEA0084CE71 /* camera_crosshair@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera_crosshair@3x.png"; sourceTree = "<group>"; };
+		D668EC851C009BEA0084CE71 /* close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@3x.png"; sourceTree = "<group>"; };
+		D668EC861C009BEA0084CE71 /* date@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "date@3x.png"; sourceTree = "<group>"; };
+		D668EC871C009BEA0084CE71 /* home_active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_active@3x.png"; sourceTree = "<group>"; };
+		D668EC881C009BEA0084CE71 /* home_inactive@3x copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_inactive@3x copy.png"; sourceTree = "<group>"; };
+		D668EC891C009BEA0084CE71 /* live_active@3x copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "live_active@3x copy.png"; sourceTree = "<group>"; };
+		D668EC8A1C009BEA0084CE71 /* live_inactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "live_inactive@3x.png"; sourceTree = "<group>"; };
+		D668EC8B1C009BEA0084CE71 /* pointer@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pointer@3x.png"; sourceTree = "<group>"; };
+		D668EC8C1C009BEA0084CE71 /* profile_arrow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_arrow@3x.png"; sourceTree = "<group>"; };
+		D668EC8D1C009BEA0084CE71 /* profile_pic@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile_pic@1x.png"; sourceTree = "<group>"; };
+		D668EC8E1C009BEA0084CE71 /* rate_dead_active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_dead_active@3x.png"; sourceTree = "<group>"; };
+		D668EC8F1C009BEA0084CE71 /* rate_dead_inactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_dead_inactive@3x.png"; sourceTree = "<group>"; };
+		D668EC901C009BEA0084CE71 /* rate_happy_active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_happy_active@3x.png"; sourceTree = "<group>"; };
+		D668EC911C009BEA0084CE71 /* rate_happy_inactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_happy_inactive@3x.png"; sourceTree = "<group>"; };
+		D668EC921C009BEA0084CE71 /* rate_really_happy_active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_really_happy_active@3x.png"; sourceTree = "<group>"; };
+		D668EC931C009BEA0084CE71 /* rate_really_happy_inactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_really_happy_inactive@3x.png"; sourceTree = "<group>"; };
+		D668EC941C009BEA0084CE71 /* rate_sad_active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_sad_active@3x.png"; sourceTree = "<group>"; };
+		D668EC951C009BEA0084CE71 /* rate_sad_inactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_sad_inactive@3x.png"; sourceTree = "<group>"; };
+		D668EC961C009BEA0084CE71 /* rate_smiling_active@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_smiling_active@3x.png"; sourceTree = "<group>"; };
+		D668EC971C009BEA0084CE71 /* rate_smiling_inactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rate_smiling_inactive@3x.png"; sourceTree = "<group>"; };
+		D668EC981C009BEA0084CE71 /* settings_active@3x copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_active@3x copy.png"; sourceTree = "<group>"; };
+		D668EC991C009BEA0084CE71 /* settings_inactive@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings_inactive@3x.png"; sourceTree = "<group>"; };
+		D668EC9A1C009BEA0084CE71 /* Sleep1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sleep1@3x.png"; sourceTree = "<group>"; };
+		D668ECB31C00A8CD0084CE71 /* sleep_detail_graph@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sleep_detail_graph@3x.png"; sourceTree = "<group>"; };
+		D668ECB51C00ABE50084CE71 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		D668ECB71C00B01D0084CE71 /* SelectBabyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectBabyViewController.h; sourceTree = "<group>"; };
+		D668ECB81C00B01D0084CE71 /* SelectBabyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectBabyViewController.m; sourceTree = "<group>"; };
+		D668ECBA1C00B1E20084CE71 /* profile@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@3x.png"; sourceTree = "<group>"; };
+		D668ECBF1C00BB220084CE71 /* RatingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingViewController.h; sourceTree = "<group>"; };
+		D668ECC01C00BB220084CE71 /* RatingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingViewController.m; sourceTree = "<group>"; };
+		D668ECC21C00BBC60084CE71 /* Rating@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rating@3x.png"; sourceTree = "<group>"; };
+		D675C8911C01541B00975BE3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D675C8931C01543400975BE3 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D675C8951C0154D800975BE3 /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sinch.framework; sourceTree = "<group>"; };
+		D675C8971C01597400975BE3 /* business_ring_03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = business_ring_03.wav; sourceTree = "<group>"; };
+		D69AFAAC1BFEC23800F7DE49 /* FlirOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlirOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69AFAB01BFEC23800F7DE49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D69AFAB21BFEC23800F7DE49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D69AFAB31BFEC23800F7DE49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D69AFAB51BFEC23800F7DE49 /* CameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		D69AFAB61BFEC23800F7DE49 /* CameraViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		D69AFAB91BFEC23800F7DE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D69AFABC1BFEC23800F7DE49 /* FlirOne.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlirOne.xcdatamodel; sourceTree = "<group>"; };
+		D69AFABE1BFEC23800F7DE49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D69AFAC11BFEC23800F7DE49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D69AFAC31BFEC23800F7DE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69AFAC81BFEC23800F7DE49 /* FlirOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlirOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69AFACC1BFEC23800F7DE49 /* FlirOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlirOneTests.m; sourceTree = "<group>"; };
+		D69AFACE1BFEC23800F7DE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69AFAD31BFEC23800F7DE49 /* FlirOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlirOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D69AFAD71BFEC23800F7DE49 /* FlirOneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlirOneUITests.m; sourceTree = "<group>"; };
+		D69AFAD91BFEC23800F7DE49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69AFAE51BFEC2AC00F7DE49 /* FLIROneSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FLIROneSDK.bundle; sourceTree = "<group>"; };
+		D69AFAE61BFEC2AC00F7DE49 /* FLIROneSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FLIROneSDK.framework; sourceTree = "<group>"; };
+		D69AFAE71BFEC2AC00F7DE49 /* sampleframes_hq.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = sampleframes_hq.bundle; sourceTree = "<group>"; };
+		D69AFAEB1BFEC34900F7DE49 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D69AFAED1BFEC36200F7DE49 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		D69AFAEF1BFEC5D100F7DE49 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D69AFAF11BFEC60200F7DE49 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D69AFAF31BFEC66100F7DE49 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		D69AFAF51BFEC66F00F7DE49 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D69AFAF71BFEC6AC00F7DE49 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D69AFAA91BFEC23800F7DE49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D675C8941C01543400975BE3 /* AudioToolbox.framework in Frameworks */,
+				D675C8961C0154D800975BE3 /* Sinch.framework in Frameworks */,
+				D675C8921C01541B00975BE3 /* Security.framework in Frameworks */,
+				D668EC6D1C001FF40084CE71 /* QuartzCore.framework in Frameworks */,
+				D668EC6B1C001FEE0084CE71 /* CoreImage.framework in Frameworks */,
+				D69AFAF81BFEC6AC00F7DE49 /* MobileCoreServices.framework in Frameworks */,
+				D69AFAF61BFEC66F00F7DE49 /* CoreLocation.framework in Frameworks */,
+				D69AFAF41BFEC66100F7DE49 /* ExternalAccessory.framework in Frameworks */,
+				D69AFAF21BFEC60200F7DE49 /* ImageIO.framework in Frameworks */,
+				D69AFAF01BFEC5D100F7DE49 /* AVFoundation.framework in Frameworks */,
+				D69AFAEE1BFEC36200F7DE49 /* libstdc++.tbd in Frameworks */,
+				D69AFAEC1BFEC34900F7DE49 /* Accelerate.framework in Frameworks */,
+				D69AFAE91BFEC2AC00F7DE49 /* FLIROneSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69AFAC51BFEC23800F7DE49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69AFAD01BFEC23800F7DE49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D668EC711C005F480084CE71 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D675C8971C01597400975BE3 /* business_ring_03.wav */,
+				D668ECC21C00BBC60084CE71 /* Rating@3x.png */,
+				D668ECBA1C00B1E20084CE71 /* profile@3x.png */,
+				D668ECB51C00ABE50084CE71 /* back@2x.png */,
+				D668ECB31C00A8CD0084CE71 /* sleep_detail_graph@3x.png */,
+				D668EC831C009BEA0084CE71 /* camera_crosshair@2x.png */,
+				D668EC841C009BEA0084CE71 /* camera_crosshair@3x.png */,
+				D668EC851C009BEA0084CE71 /* close@3x.png */,
+				D668EC861C009BEA0084CE71 /* date@3x.png */,
+				D668EC871C009BEA0084CE71 /* home_active@3x.png */,
+				D668EC881C009BEA0084CE71 /* home_inactive@3x copy.png */,
+				D668EC891C009BEA0084CE71 /* live_active@3x copy.png */,
+				D668EC8A1C009BEA0084CE71 /* live_inactive@3x.png */,
+				D668EC8B1C009BEA0084CE71 /* pointer@3x.png */,
+				D668EC8C1C009BEA0084CE71 /* profile_arrow@3x.png */,
+				D668EC8D1C009BEA0084CE71 /* profile_pic@1x.png */,
+				D668EC8E1C009BEA0084CE71 /* rate_dead_active@3x.png */,
+				D668EC8F1C009BEA0084CE71 /* rate_dead_inactive@3x.png */,
+				D668EC901C009BEA0084CE71 /* rate_happy_active@3x.png */,
+				D668EC911C009BEA0084CE71 /* rate_happy_inactive@3x.png */,
+				D668EC921C009BEA0084CE71 /* rate_really_happy_active@3x.png */,
+				D668EC931C009BEA0084CE71 /* rate_really_happy_inactive@3x.png */,
+				D668EC941C009BEA0084CE71 /* rate_sad_active@3x.png */,
+				D668EC951C009BEA0084CE71 /* rate_sad_inactive@3x.png */,
+				D668EC961C009BEA0084CE71 /* rate_smiling_active@3x.png */,
+				D668EC971C009BEA0084CE71 /* rate_smiling_inactive@3x.png */,
+				D668EC981C009BEA0084CE71 /* settings_active@3x copy.png */,
+				D668EC991C009BEA0084CE71 /* settings_inactive@3x.png */,
+				D668EC9A1C009BEA0084CE71 /* Sleep1@3x.png */,
+				D668EC7F1C0092060084CE71 /* close@3x.png */,
+				D668EC741C00633B0084CE71 /* ProximaNovaSoft-Bold.otf */,
+				D668EC751C00633B0084CE71 /* ProximaNovaSoft-Regular.otf */,
+				D668EC721C005F810084CE71 /* camera_crosshair@2x.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		D69AFAA31BFEC23800F7DE49 = {
+			isa = PBXGroup;
+			children = (
+				D675C8951C0154D800975BE3 /* Sinch.framework */,
+				D675C8931C01543400975BE3 /* AudioToolbox.framework */,
+				D675C8911C01541B00975BE3 /* Security.framework */,
+				D668EC6C1C001FF40084CE71 /* QuartzCore.framework */,
+				D668EC6A1C001FEE0084CE71 /* CoreImage.framework */,
+				D69AFAF71BFEC6AC00F7DE49 /* MobileCoreServices.framework */,
+				D69AFAF51BFEC66F00F7DE49 /* CoreLocation.framework */,
+				D69AFAF31BFEC66100F7DE49 /* ExternalAccessory.framework */,
+				D69AFAF11BFEC60200F7DE49 /* ImageIO.framework */,
+				D69AFAEF1BFEC5D100F7DE49 /* AVFoundation.framework */,
+				D69AFAED1BFEC36200F7DE49 /* libstdc++.tbd */,
+				D69AFAEB1BFEC34900F7DE49 /* Accelerate.framework */,
+				D69AFAAE1BFEC23800F7DE49 /* FlirOne */,
+				D69AFACB1BFEC23800F7DE49 /* FlirOneTests */,
+				D69AFAD61BFEC23800F7DE49 /* FlirOneUITests */,
+				D69AFAAD1BFEC23800F7DE49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D69AFAAD1BFEC23800F7DE49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D69AFAAC1BFEC23800F7DE49 /* FlirOne.app */,
+				D69AFAC81BFEC23800F7DE49 /* FlirOneTests.xctest */,
+				D69AFAD31BFEC23800F7DE49 /* FlirOneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D69AFAAE1BFEC23800F7DE49 /* FlirOne */ = {
+			isa = PBXGroup;
+			children = (
+				D668EC711C005F480084CE71 /* Assets */,
+				D69AFAE51BFEC2AC00F7DE49 /* FLIROneSDK.bundle */,
+				D69AFAE61BFEC2AC00F7DE49 /* FLIROneSDK.framework */,
+				D69AFAE71BFEC2AC00F7DE49 /* sampleframes_hq.bundle */,
+				D69AFAB21BFEC23800F7DE49 /* AppDelegate.h */,
+				D69AFAB31BFEC23800F7DE49 /* AppDelegate.m */,
+				D69AFAB51BFEC23800F7DE49 /* CameraViewController.h */,
+				D69AFAB61BFEC23800F7DE49 /* CameraViewController.m */,
+				D668EC7C1C0068AB0084CE71 /* HomeViewController.h */,
+				D668EC7D1C0068AB0084CE71 /* HomeViewController.m */,
+				D668EC791C0068860084CE71 /* BaseViewController.h */,
+				D668EC7A1C0068860084CE71 /* BaseViewController.m */,
+				D668ECB71C00B01D0084CE71 /* SelectBabyViewController.h */,
+				D668ECB81C00B01D0084CE71 /* SelectBabyViewController.m */,
+				D69AFAB81BFEC23800F7DE49 /* Main.storyboard */,
+				D668ECBF1C00BB220084CE71 /* RatingViewController.h */,
+				D668ECC01C00BB220084CE71 /* RatingViewController.m */,
+				D668EC6E1C0045720084CE71 /* MyImageProcessing.h */,
+				D668EC6F1C0045720084CE71 /* MyImageProcessing.m */,
+				D668EC761C0063E90084CE71 /* Config.h */,
+				D668EC771C0063E90084CE71 /* Config.m */,
+				D69AFABE1BFEC23800F7DE49 /* Assets.xcassets */,
+				D69AFAC01BFEC23800F7DE49 /* LaunchScreen.storyboard */,
+				D69AFAC31BFEC23800F7DE49 /* Info.plist */,
+				D69AFABB1BFEC23800F7DE49 /* FlirOne.xcdatamodeld */,
+				D69AFAAF1BFEC23800F7DE49 /* Supporting Files */,
+			);
+			path = FlirOne;
+			sourceTree = "<group>";
+		};
+		D69AFAAF1BFEC23800F7DE49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D69AFAB01BFEC23800F7DE49 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D69AFACB1BFEC23800F7DE49 /* FlirOneTests */ = {
+			isa = PBXGroup;
+			children = (
+				D69AFACC1BFEC23800F7DE49 /* FlirOneTests.m */,
+				D69AFACE1BFEC23800F7DE49 /* Info.plist */,
+			);
+			path = FlirOneTests;
+			sourceTree = "<group>";
+		};
+		D69AFAD61BFEC23800F7DE49 /* FlirOneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D69AFAD71BFEC23800F7DE49 /* FlirOneUITests.m */,
+				D69AFAD91BFEC23800F7DE49 /* Info.plist */,
+			);
+			path = FlirOneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D69AFAAB1BFEC23800F7DE49 /* FlirOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69AFADC1BFEC23800F7DE49 /* Build configuration list for PBXNativeTarget "FlirOne" */;
+			buildPhases = (
+				D69AFAA81BFEC23800F7DE49 /* Sources */,
+				D69AFAA91BFEC23800F7DE49 /* Frameworks */,
+				D69AFAAA1BFEC23800F7DE49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlirOne;
+			productName = FlirOne;
+			productReference = D69AFAAC1BFEC23800F7DE49 /* FlirOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D69AFAC71BFEC23800F7DE49 /* FlirOneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69AFADF1BFEC23800F7DE49 /* Build configuration list for PBXNativeTarget "FlirOneTests" */;
+			buildPhases = (
+				D69AFAC41BFEC23800F7DE49 /* Sources */,
+				D69AFAC51BFEC23800F7DE49 /* Frameworks */,
+				D69AFAC61BFEC23800F7DE49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D69AFACA1BFEC23800F7DE49 /* PBXTargetDependency */,
+			);
+			name = FlirOneTests;
+			productName = FlirOneTests;
+			productReference = D69AFAC81BFEC23800F7DE49 /* FlirOneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D69AFAD21BFEC23800F7DE49 /* FlirOneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D69AFAE21BFEC23800F7DE49 /* Build configuration list for PBXNativeTarget "FlirOneUITests" */;
+			buildPhases = (
+				D69AFACF1BFEC23800F7DE49 /* Sources */,
+				D69AFAD01BFEC23800F7DE49 /* Frameworks */,
+				D69AFAD11BFEC23800F7DE49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D69AFAD51BFEC23800F7DE49 /* PBXTargetDependency */,
+			);
+			name = FlirOneUITests;
+			productName = FlirOneUITests;
+			productReference = D69AFAD31BFEC23800F7DE49 /* FlirOneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D69AFAA41BFEC23800F7DE49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Victor;
+				TargetAttributes = {
+					D69AFAAB1BFEC23800F7DE49 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					D69AFAC71BFEC23800F7DE49 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D69AFAAB1BFEC23800F7DE49;
+					};
+					D69AFAD21BFEC23800F7DE49 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = D69AFAAB1BFEC23800F7DE49;
+					};
+				};
+			};
+			buildConfigurationList = D69AFAA71BFEC23800F7DE49 /* Build configuration list for PBXProject "FlirOne" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D69AFAA31BFEC23800F7DE49;
+			productRefGroup = D69AFAAD1BFEC23800F7DE49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D69AFAAB1BFEC23800F7DE49 /* FlirOne */,
+				D69AFAC71BFEC23800F7DE49 /* FlirOneTests */,
+				D69AFAD21BFEC23800F7DE49 /* FlirOneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D69AFAAA1BFEC23800F7DE49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D668EC9C1C009BEA0084CE71 /* camera_crosshair@3x.png in Resources */,
+				D668EC9E1C009BEA0084CE71 /* date@3x.png in Resources */,
+				D668EC9F1C009BEA0084CE71 /* home_active@3x.png in Resources */,
+				D668ECA01C009BEA0084CE71 /* home_inactive@3x copy.png in Resources */,
+				D668ECA11C009BEA0084CE71 /* live_active@3x copy.png in Resources */,
+				D668ECB41C00A8CD0084CE71 /* sleep_detail_graph@3x.png in Resources */,
+				D668ECA21C009BEA0084CE71 /* live_inactive@3x.png in Resources */,
+				D668ECA31C009BEA0084CE71 /* pointer@3x.png in Resources */,
+				D668ECA41C009BEA0084CE71 /* profile_arrow@3x.png in Resources */,
+				D668ECBB1C00B1E20084CE71 /* profile@3x.png in Resources */,
+				D668ECA51C009BEA0084CE71 /* profile_pic@1x.png in Resources */,
+				D668ECA61C009BEA0084CE71 /* rate_dead_active@3x.png in Resources */,
+				D668ECA71C009BEA0084CE71 /* rate_dead_inactive@3x.png in Resources */,
+				D668ECA81C009BEA0084CE71 /* rate_happy_active@3x.png in Resources */,
+				D668ECA91C009BEA0084CE71 /* rate_happy_inactive@3x.png in Resources */,
+				D668ECC31C00BBC60084CE71 /* Rating@3x.png in Resources */,
+				D668ECAA1C009BEA0084CE71 /* rate_really_happy_active@3x.png in Resources */,
+				D668ECAB1C009BEA0084CE71 /* rate_really_happy_inactive@3x.png in Resources */,
+				D668ECAC1C009BEA0084CE71 /* rate_sad_active@3x.png in Resources */,
+				D668ECB61C00ABE50084CE71 /* back@2x.png in Resources */,
+				D668ECAD1C009BEA0084CE71 /* rate_sad_inactive@3x.png in Resources */,
+				D675C8981C01597400975BE3 /* business_ring_03.wav in Resources */,
+				D668ECAE1C009BEA0084CE71 /* rate_smiling_active@3x.png in Resources */,
+				D668ECAF1C009BEA0084CE71 /* rate_smiling_inactive@3x.png in Resources */,
+				D668ECB01C009BEA0084CE71 /* settings_active@3x copy.png in Resources */,
+				D668ECB11C009BEA0084CE71 /* settings_inactive@3x.png in Resources */,
+				D668ECB21C009BEA0084CE71 /* Sleep1@3x.png in Resources */,
+				D668EC801C0092060084CE71 /* close@3x.png in Resources */,
+				D668EC811C00987D0084CE71 /* ProximaNovaSoft-Bold.otf in Resources */,
+				D668EC821C00987D0084CE71 /* ProximaNovaSoft-Regular.otf in Resources */,
+				D668EC9B1C009BEA0084CE71 /* camera_crosshair@2x.png in Resources */,
+				D69AFAC21BFEC23800F7DE49 /* LaunchScreen.storyboard in Resources */,
+				D668EC801C0092060084CE71 /* close@3x.png in Resources */,
+				D69AFAEA1BFEC2AD00F7DE49 /* sampleframes_hq.bundle in Resources */,
+				D69AFABF1BFEC23800F7DE49 /* Assets.xcassets in Resources */,
+				D69AFAE81BFEC2AC00F7DE49 /* FLIROneSDK.bundle in Resources */,
+				D668EC9B1C009BEA0084CE71 /* camera_crosshair@2x.png in Resources */,
+				D69AFABA1BFEC23800F7DE49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69AFAC61BFEC23800F7DE49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69AFAD11BFEC23800F7DE49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D69AFAA81BFEC23800F7DE49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69AFAB71BFEC23800F7DE49 /* CameraViewController.m in Sources */,
+				D668EC781C0063E90084CE71 /* Config.m in Sources */,
+				D668EC701C0045720084CE71 /* MyImageProcessing.m in Sources */,
+				D668ECC11C00BB220084CE71 /* RatingViewController.m in Sources */,
+				D69AFAB41BFEC23800F7DE49 /* AppDelegate.m in Sources */,
+				D668ECB91C00B01D0084CE71 /* SelectBabyViewController.m in Sources */,
+				D69AFAB11BFEC23800F7DE49 /* main.m in Sources */,
+				D668EC7B1C0068860084CE71 /* BaseViewController.m in Sources */,
+				D69AFABD1BFEC23800F7DE49 /* FlirOne.xcdatamodeld in Sources */,
+				D668EC7E1C0068AB0084CE71 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69AFAC41BFEC23800F7DE49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69AFACD1BFEC23800F7DE49 /* FlirOneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D69AFACF1BFEC23800F7DE49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D69AFAD81BFEC23800F7DE49 /* FlirOneUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D69AFACA1BFEC23800F7DE49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D69AFAAB1BFEC23800F7DE49 /* FlirOne */;
+			targetProxy = D69AFAC91BFEC23800F7DE49 /* PBXContainerItemProxy */;
+		};
+		D69AFAD51BFEC23800F7DE49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D69AFAAB1BFEC23800F7DE49 /* FlirOne */;
+			targetProxy = D69AFAD41BFEC23800F7DE49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D69AFAB81BFEC23800F7DE49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D69AFAB91BFEC23800F7DE49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D69AFAC01BFEC23800F7DE49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D69AFAC11BFEC23800F7DE49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D69AFADA1BFEC23800F7DE49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D69AFADB1BFEC23800F7DE49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D69AFADD1BFEC23800F7DE49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlirOne",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FlirOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.FlirOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D69AFADE1BFEC23800F7DE49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FlirOne",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FlirOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-Xlinker",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.FlirOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D69AFAE01BFEC23800F7DE49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlirOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.FlirOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlirOne.app/FlirOne";
+			};
+			name = Debug;
+		};
+		D69AFAE11BFEC23800F7DE49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FlirOneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.FlirOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlirOne.app/FlirOne";
+			};
+			name = Release;
+		};
+		D69AFAE31BFEC23800F7DE49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlirOneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.FlirOneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlirOne;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D69AFAE41BFEC23800F7DE49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FlirOneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Victor.FlirOneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlirOne;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D69AFAA71BFEC23800F7DE49 /* Build configuration list for PBXProject "FlirOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69AFADA1BFEC23800F7DE49 /* Debug */,
+				D69AFADB1BFEC23800F7DE49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69AFADC1BFEC23800F7DE49 /* Build configuration list for PBXNativeTarget "FlirOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69AFADD1BFEC23800F7DE49 /* Debug */,
+				D69AFADE1BFEC23800F7DE49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69AFADF1BFEC23800F7DE49 /* Build configuration list for PBXNativeTarget "FlirOneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69AFAE01BFEC23800F7DE49 /* Debug */,
+				D69AFAE11BFEC23800F7DE49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D69AFAE21BFEC23800F7DE49 /* Build configuration list for PBXNativeTarget "FlirOneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69AFAE31BFEC23800F7DE49 /* Debug */,
+				D69AFAE41BFEC23800F7DE49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D69AFABB1BFEC23800F7DE49 /* FlirOne.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D69AFABC1BFEC23800F7DE49 /* FlirOne.xcdatamodel */,
+			);
+			currentVersion = D69AFABC1BFEC23800F7DE49 /* FlirOne.xcdatamodel */;
+			path = FlirOne.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D69AFAA41BFEC23800F7DE49 /* Project object */;
+}

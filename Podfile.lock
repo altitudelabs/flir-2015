@@ -1,0 +1,13 @@
+PODS:
+  - SinchRTC (3.7.1)
+  - SinchVerification (1.0)
+
+DEPENDENCIES:
+  - SinchRTC
+  - SinchVerification (= 1.0)
+
+SPEC CHECKSUMS:
+  SinchRTC: 58b08d88160e514c08a1c03305728349113d5379
+  SinchVerification: 48dd87252b2c48200b9443a214e955aeb34c20a7
+
+COCOAPODS: 0.38.2
